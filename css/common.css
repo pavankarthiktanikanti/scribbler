@@ -16,7 +16,7 @@ input.topButtons {
 
 .logo-title {
     font-family: 'Montez', cursive;
-    font-size: 40px;
+    font-size: xx-large;
     color: #0000FF;
     text-decoration: none;
     margin: 10px 10px 0px 10px;
@@ -27,7 +27,7 @@ input.topButtons {
 .middleText {
     font-family: 'Ubuntu Mono', monospace;
     margin: 0 0 0px 10px;
-    font-size: 18px;
+    font-size: medium;
 }
 
 /* Styling the cursor to pointer when mouse over on any button */
@@ -129,7 +129,17 @@ hr {
     padding-bottom: 20px;
 }
 
+/* Style signup link on welcome back modal to blue color */
+
 #switchToSignUp {
     color: blue;
     cursor: pointer;
+}
+
+/* Adjust the size of modals when screen width is below 900px */
+
+@media screen and (max-width: 900px) {
+    .modal-container {
+        width: 70%;
+    }
 }

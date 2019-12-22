@@ -62,3 +62,24 @@ function postLiked() {
         document.getElementById('likesCount').innerHTML = noOfLikes + " people like this!";
     }
 }
+
+var comments = document.getElementById('listComments');
+// When no comment is added, list of comments section won't be displayed
+// just the background color with empty content will not be displayed
+comments.style.display = 'none';
+
+/**
+ * Adds the comment added in the text box appending just under the comment box input
+ * Latest displayed on the top
+ * @param {*} id The id attribute of comment text box
+ */
+function addComments(id) {
+    var userComments = id.value;
+    // If no value is entered in text box, comments section will not get updated
+    if (id.value !== '') {
+        comments.style.display = '';
+        comments.innerHTML = '<p>' + userComments + '</p>' + comments.innerHTML;
+        // Clearing the comment box field after submitting the comment.
+        id.value = id.defaultValue;
+    }
+}
