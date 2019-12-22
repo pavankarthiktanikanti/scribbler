@@ -1,0 +1,101 @@
+/* Styling the Background color of page */
+
+body {
+    background-color: #ffeedd;
+}
+
+/* Styling the posts list to display only two on a row and align to center for only one post card */
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    padding: 1%;
+}
+
+/* Post Card container with rounded edges holding author, title and content */
+
+.post-container {
+    display: flex;
+    border-radius: 15px;
+    width: 45%;
+    margin: 20px 0px;
+    background-color: white;
+    flex-direction: row;
+    max-height: 25%;
+}
+
+/* Box shadow When a user hovers on the post */
+
+.post-container:hover {
+    box-shadow: 10px 20px 10px rgb(187, 187, 187);
+}
+
+/* Styling author pane in the post card, align to center */
+
+.author {
+    color: gray;
+    text-align: center;
+    margin: auto;
+    padding: 3%;
+    font-weight: bold;
+}
+
+.author>p {
+    margin: 0;
+}
+
+/* Styling the post content on the post card */
+
+.content {
+    background-color: #E8E8E8;
+    border-radius: 0px 15px 15px 0px;
+    padding: 2% 4% 0 4%;
+    height: 100%;
+}
+
+/* Styling the post title onthe post card */
+
+.content-title {
+    color: grey;
+    display: inline-flex;
+    font-size: large;
+    text-align: left;
+    max-width: 90%;
+    margin-bottom: 1%;
+}
+
+/* Styling Post content on Post card, Limit text to only 3 lines and hide the remaining */
+
+.content-text {
+    overflow: hidden;
+    white-space: normal;
+    /* Exactly 3 lines are displayed */
+    height: 4.6em;
+    color: black;
+    max-height: 70px;
+    margin-bottom: 1%;
+}
+
+/* Styling the Delete icon */
+
+.trash-icon {
+    padding: 0 0 10px 0;
+    cursor: pointer;
+    float: right;
+    color: grey;
+    font-size: large;
+}
+
+/* Styling the ellipsis icon on post card */
+
+.ellipsis-icon {
+    padding: 0 0 10px 0;
+    cursor: pointer;
+    float: right;
+    color: grey;
+    font-size: large;
+}
