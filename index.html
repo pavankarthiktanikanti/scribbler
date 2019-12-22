@@ -49,8 +49,43 @@
     <!-- Welcome Back Sign in Modal, Markup will be populated through common.js -->
     <div id="welcomeBackModal"></div>
 
+    <!-- Pen Your Post Modal which will be shown on clicking the button Create Post -->
+    <div id="postModal" class="modal">
+        <div class="post-modal-container">
+            <!-- Modal Header Part with title and button to close the modal -->
+            <div class="modal-header-container">
+                <h4 class="modal-title" id="postModalLabel">Pen Your Post</h4>
+                <button type="button" class="close" onclick="dismissModal(postModal)" aria-label="Close">
+                    <span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></span>
+                </button>
+                <hr />
+            </div>
+            <!-- Modal Body witth input elements for title and content of Post along with Create submit button -->
+            <div class="modal-body-div">
+                <form id="postForm">
+                    <div class="form-group">
+                        <label for="postInputTitle">Title</label>
+                        <input type="text" class="modal-input" id="postInputTitle" aria-describedby="postInputTitleHelp"
+                            placeholder="Enter title of your post" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="postInputContents">Contents</label>
+                        <textarea class="modal-input" id="postInputContents" rows="10"
+                            aria-describedby="postInputContentsHelp" placeholder="Enter the contents of your post"
+                            required></textarea>
+                    </div>
+                </form>
+                <div id="createPostFooter">
+                    <button id="modalCreateBtn" form="postForm" class="btn-green-center">Create</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Include script file at the end of body, script runs after page is loaded -->
     <script src="./js/common.js"></script>
+    <!-- Include script file for enabling events for the buttons in the body of page -->
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

@@ -30,3 +30,35 @@ body {
   width: 125px;
   background-color: #CFB53B;
 }
+
+/* Styling the Modal body to position at the center of page */
+
+.post-modal-container {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0px 10px;
+  width: 85%;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+/* Styling the Create button on the Post Modal */
+
+.btn-green-center {
+  width: 120px;
+  background-color: #57BC60;
+  border: 0px;
+  text-align: center;
+  padding: 6px 10px;
+  margin: 10px 0px 30px 0px;
+  color: white;
+  font-weight: 500;
+}
+
+/* Align the button Create to the center of modal */
+
+#createPostFooter {
+  text-align: center;
+}
