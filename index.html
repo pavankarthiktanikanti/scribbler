@@ -2,12 +2,90 @@
 <html>
 
 <head>
-    <!-- TODO: Include Font Awesome file here -->
-    <!-- TODO: Include Google Fonts file here -->
+    <!-- Add title to display on the browser's title bar (at the top)-->
+    <title>ScriBBler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Include Google Fonts file -->
+    <link href="https://fonts.googleapis.com/css?family=Montez|Ubuntu+Mono&display=swap" rel="stylesheet">
+
+    <!-- Include Bootsrap stylesheet from CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Include Font Awesome file -->
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+
+    <!-- Include css related to header-->
+    <link href='./css/common.css' rel='stylesheet' type='text/css'>
+    <!-- Include css related to home page like background image and body content -->
+    <link href='./css/index.css' rel='stylesheet' type='text/css'>
+
+    <!-- Include Bootstrap script files from CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- TODO: Include all your code for the header and home page here -->
+    <!-- Header Content, Markup will be populated through common.js -->
+    <div id="headerContainer"></div>
+
+    <!-- Display buttons at the center of page for All posts and Create post-->
+    <div class="wrapper">
+        <button id="allPostsBtn" class="button">All Posts</button>
+        <button id="createPostBtn" class="button">Create Post</button>
+    </div>
+
+    <!-- Getting Started Sign up Modal, Markup will be populated through common.js -->
+    <div id="gettingStartedModal"></div>
+
+    <!-- Welcome Back Sign in Modal, Markup will be populated through common.js -->
+    <div id="welcomeBackModal"></div>
+
+    <!-- Pen Your Post Modal which will be shown on clicking the button Create Post -->
+    <div id="postModal" class="modal">
+        <div class="post-modal-container">
+            <!-- Modal Header Part with title and button to close the modal -->
+            <div class="modal-header-container">
+                <h4 class="modal-title" id="postModalLabel">Pen Your Post</h4>
+                <button type="button" class="close" onclick="dismissModal(postModal)" aria-label="Close">
+                    <span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></span>
+                </button>
+                <hr />
+            </div>
+            <!-- Modal Body witth input elements for title and content of Post along with Create submit button -->
+            <div class="modal-body-div">
+                <form id="postForm">
+                    <div class="form-group">
+                        <label for="postInputTitle">Title</label>
+                        <input type="text" class="modal-input" id="postInputTitle" aria-describedby="postInputTitleHelp"
+                            placeholder="Enter title of your post" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="postInputContents">Contents</label>
+                        <textarea class="modal-input" id="postInputContents" rows="10"
+                            aria-describedby="postInputContentsHelp" placeholder="Enter the contents of your post"
+                            required></textarea>
+                    </div>
+                </form>
+                <div id="createPostFooter">
+                    <button id="modalCreateBtn" form="postForm" class="btn-green-center">Create</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include script file at the end of body, script runs after page is loaded -->
+    <script src="./js/common.js"></script>
+    <!-- Include script file for enabling events for the buttons in the body of page -->
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,135 @@
+/* Styling the Top Right Signup and Sign in Buttons in Blue color */
+
+input.topButtons {
+    width: 100px;
+    padding: 5px 10px;
+    cursor: pointer;
+    text-align: center;
+    background: #0000ff;
+    color: #fff;
+    float: right;
+    margin: 10px 15px 10px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styling the Logo with Montez Font */
+
+.logo-title {
+    font-family: 'Montez', cursive;
+    font-size: 40px;
+    color: #0000FF;
+    text-decoration: none;
+    margin: 10px 10px 0px 10px;
+}
+
+/* Styling the text below the Logo with Ubuntu Mono Font */
+
+.middleText {
+    font-family: 'Ubuntu Mono', monospace;
+    margin: 0 0 0px 10px;
+    font-size: 18px;
+}
+
+/* Styling the cursor to pointer when mouse over on any button */
+
+button {
+    cursor: pointer;
+}
+
+/* The Modal (background) */
+
+.modal {
+    /* Hidden by default */
+    display: none;
+    /* Stay in place */
+    position: fixed;
+    /* Sit on top */
+    z-index: 1;
+    left: 0;
+    top: 0;
+    /* Full width */
+    width: 100%;
+    /* Full height */
+    height: 100%;
+    overflow: auto;
+    /* Display Overlay on back of modal */
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Styling the input fields on the modal */
+
+.modal-input {
+    display: block;
+    background-color: #F1F1F1;
+    padding: 5px 10px;
+    border: 0px;
+    border-radius: 0px;
+    width: 100%;
+}
+
+.modal-header-container {
+    padding: 10px 10px 0px 10px;
+}
+
+/* Styling the Title of Modal */
+
+h4 {
+    display: inline;
+    color: rgb(94, 86, 86);
+    font-weight: 350;
+}
+
+/* Horizontal line in the modal */
+
+hr {
+    padding: 0px;
+    margin: 6px 0px;
+    background-color: black;
+}
+
+/* Modal Content, Display at the center of page */
+
+.modal-container {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0px 10px;
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+/* Styling the body of Modal */
+
+.modal-body-div {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 0px 10px;
+}
+
+/* Styling the submit buttons on Signin and Signup modals */
+
+.modal-input-btn {
+    width: 100%;
+    background-color: #57BC60;
+    border: 0px;
+    text-align: center;
+    padding: 6px;
+    margin: 10px 0px 30px 0px;
+    color: white;
+    font-weight: 500;
+}
+
+/* Place the content in the footer at the center of modal */
+
+.modal-footer-container {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+#switchToSignUp {
+    color: blue;
+    cursor: pointer;
+}
