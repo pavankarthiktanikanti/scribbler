@@ -1,5 +1,33 @@
+/*
+  Set Image as Home page Background to complete page height
+*/
+
 body {
   background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100vh;
+}
+
+/*
+  Positioning the buttons to the center of page
+*/
+
+.wrapper {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+/*
+  Style the center buttons in Yellow Color
+*/
+
+.button {
+  margin-right: 15px;
+  padding: 7px 5px;
+  width: 125px;
+  background-color: #CFB53B;
+  cursor: pointer;
 }
