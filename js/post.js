@@ -81,5 +81,6 @@ function addComments(id) {
         comments.innerHTML = '<p>' + userComments + '</p>' + comments.innerHTML;
         // Clearing the comment box field after submitting the comment.
         id.value = id.defaultValue;
+        comments.scrollIntoView();
     }
 }
