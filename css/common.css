@@ -1,0 +1,31 @@
+/* Styling the Top Right Signup and Sign in Buttons in Blue color */
+
+input.topButtons {
+    width: 100px;
+    padding: 5px 10px;
+    cursor: pointer;
+    text-align: center;
+    background: #0000ff;
+    color: #fff;
+    float: right;
+    margin: 10px 15px 10px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styling the Logo with Montez Font */
+
+.logo-title {
+    font-family: 'Montez', cursive;
+    font-size: 40px;
+    color: #0000FF;
+    text-decoration: none;
+    margin: 10px 10px 0px 10px;
+}
+
+/* Styling the text below the Logo with Ubuntu Mono Font */
+
+.middleText {
+    font-family: 'Ubuntu Mono', monospace;
+    margin: 0 0 0px 10px;
+    font-size: 18px;
+}
