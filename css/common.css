@@ -129,7 +129,17 @@ hr {
     padding-bottom: 20px;
 }
 
+/* Style signup link on welcome back modal to blue color */
+
 #switchToSignUp {
     color: blue;
     cursor: pointer;
+}
+
+/* Adjust the size of modals when screen width is below 900px */
+
+@media screen and (max-width: 900px) {
+    .modal-container {
+        width: 70%;
+    }
 }
