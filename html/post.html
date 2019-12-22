@@ -105,6 +105,17 @@
             <p id="likesCount" class="like-count">Be the first one to like this!</p>
         </div>
 
+        <!-- Comments Section to add new comments -->
+        <div id="commentSection">
+            <textarea rows="4" cols="100" placeholder="Leave a comment..." id="userComments" value=""></textarea>
+            <!-- Button to post a new comment, passing the id of text box. JS reads the value and appends the same under this -->
+            <button id="addComment" class="pink-btn" onclick="addComments(userComments)">Comment</button>
+            <h6>All Comments</h6>
+
+            <!-- All entered comments will be displayed dynamically on click of Comment button -->
+            <div id="listComments"></div>
+        </div>
+
         <!-- Getting Started Sign up Modal, Markup will be populated through common.js -->
         <div id="gettingStartedModal"></div>
 
