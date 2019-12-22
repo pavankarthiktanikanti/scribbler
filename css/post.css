@@ -1,0 +1,100 @@
+/* Display the container at the center with 95% of the page width */
+
+#container {
+    width: 95%;
+    margin: auto;
+}
+
+/* Align to center with bold font for Post title */
+
+h3 {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+}
+
+/* Sets the margin for all the elements */
+
+.author-detail, .post-detail, #commentSection {
+    margin: 20px 10px 20px 10px;
+}
+
+/* Set the Font for Author name and x-large size */
+
+.author {
+    font-family: Candara, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+}
+
+/* Styling the button with pink color, align text to center */
+
+.pink-btn {
+    background-color: #ED2553;
+    color: white;
+    padding: 6px 15px;
+    border: none;
+    width: 100px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Placing the Save/Edit Button to the right of the line */
+
+.toggle-btn {
+    float: right;
+}
+
+/* Styling the Post content to display by alignment set to justify */
+
+.post-content {
+    text-align: justify;
+    font-size: small;
+    line-height: 1rem;
+}
+
+/* Display pink border for title and content of post */
+
+.edit-mode {
+    border: 2px solid rgb(252, 176, 189);
+}
+
+/* Set the margin for the Likes count text */
+
+.like-count {
+    margin: 1rem 0;
+}
+
+/* Style the comments text box, display the text area in 70% of the page */
+
+#userComments {
+    font-size: small;
+    width: 70%;
+    display: block;
+    margin: 14px 0px;
+}
+
+/* Styling the already provided comments under the comments section */
+
+#listComments {
+    width: 70%;
+    background-color: #E5E5E7;
+    margin: 10px 0px;
+    padding: 10px 1px;
+}
+
+/* Styling the Comments text, background as white and wrap the text with break word */
+
+#listComments>p {
+    background-color: white;
+    padding: 15px 10px;
+    margin: 10px;
+    color: black;
+    word-wrap: break-word;
+}
+
+/* The header All Comments displayed under comments section in black color with margin */
+
+h6 {
+    color: black;
+    margin-top: 20px;
+}
