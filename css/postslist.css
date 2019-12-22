@@ -99,3 +99,52 @@ body {
     color: grey;
     font-size: large;
 }
+
+/* 
+    Modal Content for Confirming the delete of post 
+    Place at the center of screen
+*/
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    border-radius: 0px;
+}
+
+/* Styling the content text on Modal */
+
+.modal-content>p {
+    font-size: 120%;
+    color: black;
+}
+
+/* Button Styling for Modal, align the text to center */
+
+.modal-btn {
+    border: 0px;
+    padding: 7px 0px;
+    margin: 10px 0px;
+    text-align: center;
+    color: white;
+    width: 90px;
+}
+
+/* Align yes button to left of modal in Green color */
+
+.yes-btn {
+    float: left;
+    background-color: #58BC58;
+}
+
+/* Align no button to right of modal in red color */
+
+.no-btn {
+    float: right;
+    background-color: #CC403A;
+}

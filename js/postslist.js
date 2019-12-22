@@ -65,3 +65,43 @@ function loadPosts() {
         postsContainer.innerHTML += template;
     });
 }
+
+/* Navigate to post page on click of ellipsis icon */
+function navigateToEditPost() {
+    window.location.href = "./post.html";
+}
+
+
+var modal = document.getElementById("cofirmationModal");
+var selectedPostId = '';
+
+/* function to display the modal and store the selected post id */
+function showModal(id) {
+    modal.style.display = "block";
+    selectedPostId = id;
+}
+
+var modalYesBtn = document.getElementById('modalYesBtn');
+var modalNoBtn = document.getElementById('modalNoBtn');
+
+/* On click of Yes button on modal, delete the selected post card and dismiss the modal */
+modalYesBtn.onclick = function () {
+    deleteContainer();
+    modal.style.display = "none";
+}
+
+/* On click of No button on modal, clear the selected post id and dismiss the modal */
+modalNoBtn.onclick = function () {
+    modal.style.display = "none";
+    selectedPostId = '';
+}
+
+/*
+    Removes/Hides the post card which is selected on the Page to delete using Trash icon
+    and clicking Yes on the confirmation modal
+*/
+function deleteContainer() {
+    if (selectedPostId !== '') {
+        document.getElementById(selectedPostId).style.display = 'none';
+    }
+}
